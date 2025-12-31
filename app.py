@@ -2,7 +2,7 @@ import streamlit as st
 from groq import Groq
 
 # 1. Page Configuration
-st.set_page_config(page_title="Ocean Softwares chatbot", page_icon="d:\Downloads\logo.png")
+st.set_page_config(page_title="Ocean Softwares chatbot", page_icon="OS-logo.jpg")
 st.title("OS Chatbot")
 
 # 2. Initialize Groq Client
@@ -49,4 +49,5 @@ if prompt := st.chat_input("Ask me anything you want to know..."):
 
     except Exception as e:
         st.error(f"Error: {e}")
+
 
