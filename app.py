@@ -22,7 +22,7 @@ for message in st.session_state.messages:
             st.markdown(message["content"])
 
 # 5. React to user input
-if prompt := st.chat_input("Ask me anything about Python..."):
+if prompt := st.chat_input("Ask me anything you want to know..."):
     # Display user message in chat message container
     with st.chat_message("user"):
         st.markdown(prompt)
@@ -49,3 +49,4 @@ if prompt := st.chat_input("Ask me anything about Python..."):
 
     except Exception as e:
         st.error(f"Error: {e}")
+
