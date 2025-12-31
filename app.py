@@ -12,7 +12,7 @@ client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 # 3. Initialize Chat History (Memory)
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "system", "content": "You are a helpful Python programming tutor."}
+        {"role": "system", "content": "You are a friend to the user to update their skill."}
     ]
 
 # 4. Display chat messages from history on app rerun
@@ -49,5 +49,6 @@ if prompt := st.chat_input("Ask me anything you want to know..."):
 
     except Exception as e:
         st.error(f"Error: {e}")
+
 
 
